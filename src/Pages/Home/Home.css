@@ -1,0 +1,57 @@
+/* .main{
+    min-height: 93vh;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    background-image: url('../../assets/background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.landingButton1{
+
+    margin-right: 10px;
+} */
+
+
+.main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: aqua;
+    background-image: url('../../assets/background.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.intro-text {
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    width: 100%;
+    height: 100%; /* Ensure it occupies full height of its parent */
+    text-align: center;
+}
+
+.title {
+    font-size: 4rem;
+    margin: 0; /* Remove unnecessary margin */
+}
+
+.subtitle {
+    font-size: 2rem;
+    margin-top: 10px; /* Adjust spacing instead of padding */
+}
