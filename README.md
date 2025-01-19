@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Collaborative Task Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Title: Collaborative Task Management System
 
-## Available Scripts
+### Description
+The Collaborative Task Management System allows multiple users to create, assign, and manage tasks within various projects. This web-based platform helps teams stay organized and efficient by providing tools to track tasks, assign them to users, and manage project details. The application includes user registration, authentication, task and project management, and various filtering and search features.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **User Registration and Authentication**:
+   - Users can register with their name, email, and password.
+   - Authentication is implemented using JWT (JSON Web Tokens).
+   - Only authenticated users can access the platform.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Project Management**:
+   - Users can create, edit, and delete projects.
+   - Each project has the following details:
+     - Title
+     - Description
+     - Creation Date
+     - Project Owner
 
-### `npm test`
+3. **Task Management**:
+   - Users can create, edit, delete, and assign tasks to users within a project.
+   - Task details include:
+     - Task Title
+     - Description
+     - Status (To-Do, In Progress, Completed)
+     - Deadline
+     - Assigned User
+   - Tasks are displayed grouped by their status.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **User Dashboard**:
+   - Displays all projects and tasks assigned to the user.
+   - Includes a task summary with total tasks, completed tasks, etc.
 
-### `npm run build`
+5. **Search and Filters**:
+   - Users can search for tasks by title or description.
+   - Tasks can be filtered by status, deadline, and assigned user.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend**:
+  - React.js (Functional components and hooks)
+  - React Router for navigation
+  - Responsive design for usability across devices
+  - Form validation for user input
 
-### `npm run eject`
+- **Backend**:
+  - Node.js and Express.js
+  - RESTful API for user authentication and CRUD operations
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Database**:
+  - MongoDB for storing:
+    - User information
+    - Project and task data
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Authentication**:
+  - JSON Web Tokens (JWT) for user authentication and authorization
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation
 
-## Learn More
+### Prerequisites
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Make sure you have the following installed:
+- Node.js and npm
+- MongoDB (or use MongoDB Atlas for cloud hosting)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Step 1: Clone the Repository
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone https://github.com/your-username/task-management-system.git
+cd task-management-system
